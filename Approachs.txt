@@ -1,6 +1,36 @@
-Các bước cần thực hiện:
-- Normalize year columns (nếu có)
-- Mô hình hóa tỷ lệ thất nghiệp.
-	- Regression by linear.
+I. Data missing: 
+- Dựa vào kết quả Data Exploding để đưa ra giải pháp gỡ chống Data missing.
+- Tiến hành mô phỏng data missing dựa trên các mô hình:
+	- Linear regression (dựa vào quan hệ giữa time và UPR).
+	- Exponential growth (dựa vào quan hệ giữa time và UPR).
+	- Okun's Rules (dựa vào quan hệ giữa GDP và UPR).
+- So sánh, đánh giá các cách trên xem cách nào tốt hơn.
+- Optional:
+	- Xem có thể regression dựa trên cả 2 biến time và GPU được không.
+
+
+II. Data Exploration:
+- Đúng ra phải là bước đầu tiên.
+- Thống kê cơ bản trên từng biến.
 - Mô hình hóa GDP:
-	- Regression by curve
+	- Mô hình theo exponential growth.
+	- So sánh, đánh giá.
+- Mô hình hóa UPR:
+	- Mô hình theo linear regression.
+	- Mô hình theo exponential growth.
+	- So sánh, đánh giá.
+- Mô hình hóa GDP và UPR:
+	- Mô hình theo Okun's law.
+	-...
+	- So sánh, đánh giá.
+
+III. Feature extraction:
+- GDP diff
+- UPR diff
+- Tỷ lệ giữa GDP và UPR
+- NOrmalize GPD và UPR về cùng đơn vị (ví dụ phần trăm).
+- 
+IV. 
+ĐƯa ra nhận định về data.
+
+		
