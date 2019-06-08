@@ -1,6 +1,0 @@
-Các bước cần thực hiện:
-- Normalize year columns (nếu có)
-- Mô hình hóa tỷ lệ thất nghiệp.
-	- Regression by linear.
-- Mô hình hóa GDP:
-	- Regression by curve
